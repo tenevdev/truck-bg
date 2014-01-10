@@ -1,0 +1,133 @@
+.container {
+    /*margin-top: 50px;*/
+}
+
+.white  h2, h4{
+    color: #fee;
+}
+
+#brand {
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+ 
+#nav {
+    margin-top: 20px;
+}
+
+#nav ul {
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+#nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    margin: 0 20px 0 0;
+    margin-bottom: 130px;
+}
+ 
+#nav ul li a {
+    text-decoration: none;
+    font-family: "Georgia", "Times New Roman", serif;
+    letter-spacing: 10px;
+    font-size: 21px;
+    line-height: 34px;
+    margin-bottom: 8px; 
+    /*margin-right: -10px;*/
+}
+
+#nav ul li a:after {
+  /* absolute positioning keeps it within h1's relative positioned box, takes it out of the document flow and forces a block-style display */
+  position: absolute;
+  /* the same width as our letter-spacing property on the h1 element */
+  width: 15px;
+  /* we need to make sure our 'mask' is tall enough to hide the underline. For my own purpose 200% was enough, but you can play and see what suits you */
+  height: 38px;
+  /* set the background colour to the same as whatever the background colour is behind your element. I've used a red box here so you can see it on your page before you change the colour ;) */
+  background-color: white;
+  /* give the browser some text to render (if you're familiar with clearing floats like this, you should understand why this is important) */
+  content: ".";
+  /* hide the dynamic text you've just added off the screen somewhere */
+  text-indent: -9999em;
+  /* this is the magic part - pull the mask off the left and hide the underline beneath */
+  margin-left: -8px;
+}
+ 
+#nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#headerImage img {
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+#welcome {
+	margin-bottom: 20px;
+}
+
+.feature {
+    /*position: relative;*/
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px calc(50% - 29px) 15px calc(50% - 29px);
+}
+
+.feature h2 {
+    text-align: center;
+}
+
+.feature p {
+}
+
+.logo {
+    width: 120px;
+    margin: 0 10px 0 10px;
+    float: left;
+}
+
+.three.logo .logo-image {
+    margin-bottom: 25px;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+}
+
+footer {
+    /*border-top: 2px solid black;*/
+}
+
+.black {
+    background-color: #000;
+}
+
+#triangle-topleft {
+    width: 0;
+    height: 100%;
+    float: left;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+    margin: -5px 0 0 -15px;
+    position: relative;
+}
+
+#contacts {
+    margin: 40px 0 0 100px;
+}
+
+.services ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; margin-left: 50px; }
+.services ol li { }
+.services ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; border-left: 1px solid #999; }
